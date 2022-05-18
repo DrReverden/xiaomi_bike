@@ -1,22 +1,71 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
-*, *::before, *::after {
-	box-sizing: inherit;
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	color: #131313;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-	padding: 0;	
+ul {
 	margin: 0;
+	list-style: none;
+}
+
+li {
+	padding-left: 0;
 }
 
 a {
 	text-decoration: none;
-	color: #000;
+	color: inherit;
 }
 
-img {
-	display: block;
-	max-width: 100%;
+.container {
+	max-width: 1220px;
+	/*добавили +20 пикселей от внутренних отступов*/
+	padding: 0 10px;
+	margin: 0 auto;
 }
+
+/* Header 
+================================*/
+
+.header__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu {
+	margin-right: 70px;
+}
+
+.menu__list {
+	display: flex;
+}
+
+.menu__item+.menu__item {
+	/*добавляет паддинги только если его сосед - меню айтем. Другими словами - всем, кроме первого*/
+	padding-left: 10px;
+}
+
+.menu__link {
+	text-transform: uppercase;
+	padding: 43px 20px;
+	transition: all .2s linear;
+}
+
+.menu__link:hover {
+	background-color: #131313;
+	color: #fff;
+}
+
+/*Section-bike
+=============================*/
