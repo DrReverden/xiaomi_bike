@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"> 
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<!--Должен идти первым-->
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Xiaomi Bike</title>
 </head>
@@ -54,17 +55,41 @@
 					</p>
 					<a href="#" class="bike__link">Заказать</a>
 				</div>
-				<div class="bike__column">
+				<div class="bike__column bike__column-slider">
 					<div class="bike-slider">
 						<img src="img/slider/bike1.png" alt="bike" class="bike-slider__item">
 						<img src="img/slider/bike2.png" alt="bike" class="bike-slider__item">
 						<img src="img/slider/bike3.png" alt="bike" class="bike-slider__item">
 						<img src="img/slider/bike4.png" alt="bike" class="bike-slider__item">
 					</div>
+					<ul class="bike__list">
+						<li class="bike__list-item">
+							до 100 км
+							<span>Запас хода</span>
+						</li>
+						<li class="bike__list-item">
+							25 км/ч
+							<span>Макс скорость</span>
+						</li>
+						<li class="bike__list-item">
+							3 режима езды
+							<span>механический, гибридный, электрический</span>
+						</li>
+						<li class="bike__list-item">
+							25 кг
+							<span>вес</span>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
 	</section>
+
+<!--bike section-->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> <!--jquery всегда должен быть самым первым-->
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script> <!--наш всегда должен идти самым последним-->
 </body>
 
 </html>

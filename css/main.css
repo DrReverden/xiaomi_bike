@@ -69,3 +69,86 @@ a {
 
 /*Section-bike
 =============================*/
+
+.bike {
+	padding: 100px 0;
+}
+
+.bike__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bike__title {
+	margin: 60px 0 5px;
+	font-weight: 700;
+	font-size: 62px;
+	line-height: 77px;
+}
+
+.bike__subtitle {
+	margin: 0 0 60px;
+	color: #6f6f6f;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+}
+
+.bike__text {
+	max-width: 420px;
+	margin-bottom: 20px;
+	line-height: 120%;
+}
+
+.bike__link {
+	display: inline-block;
+	margin-top: 80px; /*схлопывание марджинов, выигрывает большее значение*/
+	background-color: #131313;
+	color: #fff;
+
+	padding: 28px 81px;
+	text-transform: uppercase;
+
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 1.1em;
+}
+
+.bike__column-slider {
+	flex-basis: 630px;
+	max-width: 630px;
+	margin-left: 30px;
+}
+
+/*Slider*/
+
+.bike-slider .slick-dots {
+	right: 0;
+	top: 50px;
+}
+
+.slick-dots {
+	position: absolute;
+}
+
+.slick-dots li + li {
+	padding-top: 10px;
+}
+
+.slick-dots button {
+	font-size: 0;
+	padding: 0;
+	border: none;
+	background-color: #131313;
+	width: 2px;
+	height: 25px;
+	border-radius: 7px;
+	cursor: pointer;
+	transition: all .3s;
+}
+
+.slick-dots button:hover, 
+.slick-active button {
+	background-color: #ff4040;
+}
