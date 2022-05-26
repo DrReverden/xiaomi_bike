@@ -6,8 +6,17 @@
 	box-sizing: border-box;
 }
 
+button {
+	background-color: inherit;
+}
+
 p {
 	margin: 0;
+	padding: 0;
+}
+
+ul {
+	padding: 0;
 }
 
 body {
@@ -106,7 +115,8 @@ a {
 
 .bike__link {
 	display: inline-block;
-	margin-top: 80px; /*схлопывание марджинов, выигрывает большее значение*/
+	margin-top: 80px;
+	/*схлопывание марджинов, выигрывает большее значение*/
 	background-color: #131313;
 	color: #fff;
 
@@ -141,7 +151,7 @@ a {
 	position: absolute;
 }
 
-.slick-dots li + li {
+.slick-dots li+li {
 	padding-top: 10px;
 }
 
@@ -158,7 +168,7 @@ a {
 }
 
 
-.slick-dots button:hover, 
+.slick-dots button:hover,
 .slick-active button {
 	background-color: #ff4040;
 }
@@ -200,7 +210,7 @@ a {
 
 .info__inner {
 	display: flex;
-} 
+}
 
 .info__img {
 	margin-right: 60px;
@@ -212,7 +222,7 @@ a {
 	flex-basis: 490px;
 }
 
-.info__item + .info__item {
+.info__item+.info__item {
 	padding-top: 50px;
 }
 
@@ -229,3 +239,257 @@ a {
 
 /*Characteristics
 =============================================*/
+
+.characteristics {
+	margin-bottom: 150px;
+}
+
+.characteristics__title {
+	margin: 0 0 40px;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.characteristics__inner {
+	display: flex;
+}
+
+.characteristics__img {
+	align-self: center;
+}
+
+.characteristics__items {
+	flex-basis: 570px;
+	margin-right: 60px;
+}
+
+.characteristics__list+.characteristics__list {
+	padding-top: 30px;
+}
+
+.characteristics__list-title {
+	padding: 2px 0 3px;
+	background-color: #131313;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.characteristics__line {
+	display: flex;
+	padding-top: 5px;
+}
+
+.characteristics__name {
+	flex-basis: 285px;
+	padding-right: 25px;
+}
+
+.characteristics__desc {
+	flex-basis: 285px;
+}
+
+.slider {
+	margin-bottom: 50px;
+}
+
+.slider__item {
+	padding-left: 50px;
+}
+
+.slider__items .slick-dots {
+	top: 0;
+	left: 0;
+}
+
+/*Price
+============================================*/
+
+.price {
+	margin-bottom: 100px;
+}
+
+.price__inner {
+	position: relative;
+}
+
+.form {
+	max-width: 420px;
+}
+
+
+.form__title {
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.form__text {
+	max-width: 300px;
+	margin-bottom: 30px;
+}
+
+.form__input-name,
+.form__input-tel {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #131313;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	outline: none;
+}
+
+.form__input-name::placeholder,
+.form__input-tel::placeholder,
+.form__text-grey {
+	width: 100%;
+	opacity: .5;
+	color: #6F6F6F;
+}
+
+.form__text-grey {
+	margin-bottom: 10px;
+}
+
+.form__label-box {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.form__input-radio {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+}
+
+.form__input-radio:checked+.form__bike {
+	display: block;
+}
+
+.form__bike {
+	display: none;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.form__bike-img {}
+
+.form__bike-price {
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	right: 0;
+	width: 220px;
+	height: 100px;
+	border: 1px solid #ff4040;
+	border-radius: 50%;
+	align-items: center;
+	transform: translateX(-50%);
+}
+
+.form__bike-price::after {
+	content: "";
+	position: absolute;
+	width: 220px;
+	height: 100px;
+	border: 1px solid #ff4040;
+	border-radius: 50%;
+	top: 12px;
+	left: 0;
+}
+
+.form__radio-style {
+	border-radius: 30px;
+	width: 80px;
+	height: 12px;
+}
+
+.form__radio-style--grey {
+	background-color: #6f6f6f;
+}
+
+.form__radio-style--white {
+	background-color: #fff;
+	border: 1px solid #6f6f6f;
+}
+
+.form__radio-style--red {
+	background-color: #FF4040;
+}
+
+.form__label+.form__label {
+	padding-left: 23px;
+}
+
+.form__btn {
+	background-color: #131313;
+	padding: 28px 71px 28px 81px;
+	border: none;
+	color: #fff;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 24px;
+	letter-spacing: 1.1em;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: .1s linear;
+
+}
+
+.form__btn:hover {
+	background-color: #ff4040;
+}
+
+
+/*Footer
+=======================================*/
+
+.footer {
+	background-color: #131313;
+}
+
+.footer__inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100px;
+}
+
+.footer__link {
+	color: #fff;
+	text-decoration: underline;
+	text-transform: lowercase;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.footer__social-link+.footer__social-link {
+	margin-left: 26px;
+}
+
+.footer__contacts {
+	color: #fff;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+.footer__contacts-link {
+	display: flex;
+	align-items: center;
+}
+
+.footer__contacts-link+.footer__contacts-link {
+	margin-top: 10px;
+}
+
+.footer__contacts-img {
+	margin-right: 10px;
+}
